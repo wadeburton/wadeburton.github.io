@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Wade Burton's project portfolio. Explore MetaClean, a local document privacy and editing desktop app for Windows.">
-  <meta name="theme-color" content="#102c26">
+  <meta name="description" content="Wade Burton's project portfolio. Explore MetaClean and File Organizer, two local Windows desktop applications.">
+  <meta name="theme-color" content="#222226">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Wade Burton | Projects</title>
   <link rel="stylesheet" href="styles.css">
@@ -17,11 +17,12 @@
   </header>
   <main id="main">
     <section class="intro wrap" aria-labelledby="intro-title">
-      <p class="eyebrow">PROJECT PORTFOLIO / 01</p>
+      <p class="eyebrow">PROJECT PORTFOLIO / SELECTED WORK</p>
       <h1 id="intro-title">Projects, built<br>to be <em>used.</em></h1>
       <p class="intro-copy">A closer look at the applications I’m building, the decisions behind them, and what you can try.</p>
     </section>
-    <article id="projects" class="project wrap" aria-labelledby="project-title">
+    <nav id="projects" class="project-index wrap" aria-label="Choose a project"><a href="#metaclean"><span class="project-dot green" aria-hidden="true"></span><span>01 / MetaClean</span><span aria-hidden="true">↓</span></a><a href="#file-organizer"><span class="project-dot blue" aria-hidden="true"></span><span>02 / File Organizer</span><span aria-hidden="true">↓</span></a></nav>
+    <article id="metaclean" class="project metaclean wrap" aria-labelledby="project-title">
       <div class="project-heading"><span class="eyebrow">01 / FEATURED PROJECT</span><span class="status">Windows desktop · Preview</span></div>
       <div class="feature">
         <div>
@@ -55,7 +56,30 @@
         <div class="download-info"><h4>Start with a sample document.</h4><ol><li>Download and extract the entire ZIP.</li><li>Open <code>MetaClean.exe</code> inside the MetaClean folder. Keep <code>_internal</code> beside it.</li><li>Try the desktop workflow with a trusted copy of a document. Review the output.</li></ol><p>No Python installation needed. This is an unsigned preview; Windows may flag an unknown publisher. Only run software you trust.</p><details><summary>Read the preview limitations</summary><p>Use trusted files. PDF parsing is not isolated with enforced memory or time limits, so a malformed document could hang or exhaust the app. Legacy command-line output handling can overwrite files; use the desktop workflow.</p><p>Metadata cleanup is not full anonymization or malware scanning. Comments, macros, embedded files, and visible identifying content can remain. Writing changes need human review.</p></details></div>
       </section>
     </article>
+    <article id="file-organizer" class="project organizer wrap" aria-labelledby="organizer-title">
+      <div class="project-heading"><span class="eyebrow">02 / FILE ORGANIZATION</span><span class="status">Windows desktop · Preview</span></div>
+      <div class="feature">
+        <div><h2 id="organizer-title">File Organizer<span class="dot">.</span></h2><p class="feature-lead">Everything<br>in its place.</p></div>
+        <div class="feature-copy"><p>Turn a crowded folder into a clear plan. Group files, inspect their next destination, and organize them from a native desktop workspace with a local undo journal.</p><div class="actions"><a class="button primary" href="#organizer-download">Get the Windows preview <span aria-hidden="true">↓</span></a><a class="text-link" href="#organizer-engineering">Explore the build ↘</a></div><ul class="tags" aria-label="Organizer technologies"><li>Python</li><li>PySide6 / Qt</li><li>SQLite</li></ul></div>
+      </div>
+      <figure class="hero-shot"><a href="assets/organizer-desktop.png" aria-label="Open full-size File Organizer screenshot"><img src="assets/organizer-desktop.png" alt="File Organizer's native desktop interface showing synthetic sample files, category colors, selected moves, and proposed destination paths." width="1280" height="860" loading="lazy"></a><figcaption><span>THE ORGANIZATION PLAN</span> Review where every file will go before confirming a move.</figcaption></figure>
+      <div class="capabilities">
+        <section><span class="number">01</span><h3>Five ways to organize</h3><p>Group by category, extension, timeline, smart topic, or category and year. Edit category names, folder rules, and colors in the app.</p></section>
+        <section><span class="number">02</span><h3>Preview-bound moves</h3><p>Select the files and confirm the exact destinations. Stale previews are rejected, and Windows moves refuse occupied names.</p></section>
+        <section><span class="number">03</span><h3>Undo with checks</h3><p>A local journal records each move. Undo verifies file identity and SHA-256 before restoring it; changed files and name conflicts stay untouched.</p></section>
+      </div>
+      <section id="organizer-engineering" class="engineering" aria-labelledby="organizer-engineering-title">
+        <div class="section-heading"><div><p class="eyebrow">FROM BROWSER TOOL TO DESKTOP APP</p><h3 id="organizer-engineering-title">A stronger foundation.</h3></div><p>Direct local operations.<br>No browser server or file-opening API.</p></div>
+        <div class="evidence"><p><strong>70</strong> automated tests passing <span>1 skipped · September 8, 2026</span></p><p><strong>SQLite</strong> per-file operation journal <span>Intent recorded before each move</span></p><p><strong>SHA-256</strong> content verification for undo <span>Conflicts are preserved for review</span></p></div>
+        <p>The desktop version separates the interface, rules, and file operations. Background workers handle folder previews and moves. Interrupted journal entries are reconciled without automatically moving files; ambiguous cases are marked for manual review.</p>
+        <p class="small">Test coverage includes grouping modes, stale previews, collision handling, modified-file undo, simulated journal failures, UI selection, and a synthetic move-and-undo smoke test. The skipped symbolic-link test requires additional Windows privileges.</p>
+      </section>
+      <section id="organizer-download" class="download" aria-labelledby="organizer-download-title">
+        <div><p class="eyebrow">TRY THE APPLICATION</p><h3 id="organizer-download-title">A clearer folder.<br>A deliberate move.</h3><p>File Organizer 1.0.0 · Windows x64 · Portable ZIP</p><a class="button primary" href="https://github.com/wadeburton/wadeburton.github.io/releases/download/organizer-v1.0.0/FileOrganizer-1.0.0-windows-x64.zip">Download Windows preview ↓</a><p class="small"><a href="https://github.com/wadeburton/wadeburton.github.io/releases/tag/organizer-v1.0.0">Release notes &amp; checksum ↗</a></p></div>
+        <div class="download-info"><h4>Try it on a sample folder first.</h4><ol><li>Extract the entire ZIP. Open <code>FileOrganizer.exe</code> and keep <code>_internal</code> beside it.</li><li>Choose a local folder, review the proposed moves, then confirm.</li><li>Use Activity &amp; undo to restore unchanged files when needed.</li></ol><p>No Python installation required. This unsigned preview moves files; keep backups and only run software you trust.</p><details><summary>Read the preview limitations</summary><p>Windows local folders only, up to 5,000 entries. Network shares, linked files, reparse points, and some cloud placeholders are unsupported. Avoid active sync folders. It is not a backup tool or a defense against malicious concurrent filesystem changes.</p><p>Activity stays on this computer and contains paths and file hashes. Original browser-app history is not imported. Category colors are shown in the app; this preview does not recolor Windows Explorer folders. Undo leaves empty folders in place.</p></details></div>
+      </section>
+    </article>
   </main>
-  <footer class="wrap"><div><a class="identity" href="#main">Wade Burton</a><p>Projects &amp; implementation notes.</p></div><div><a href="https://github.com/wadeburton">GitHub profile ↗</a><p>MetaClean source is currently private.</p><p>No portfolio analytics or contact-form data collection. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Hosted by GitHub.</a></p></div></footer>
+  <footer class="wrap"><div><a class="identity" href="#main">Wade Burton</a><p>Projects &amp; implementation notes.</p></div><div><a href="https://github.com/wadeburton">GitHub profile ↗</a><p>Application source repositories are private.</p><p>No portfolio analytics or contact-form data collection. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Hosted by GitHub.</a></p></div></footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Wade Burton | Projects
 
-A static project portfolio for GitHub Pages, featuring MetaClean Desktop.
+A static project portfolio for GitHub Pages, featuring MetaClean Desktop and File Organizer Desktop. The site shell uses neutral charcoal, white, and gray; each project has its own scoped accent colors.
 
 The website is plain HTML and CSS, with local screenshots and accessible SVG diagrams. It has no third-party scripts, analytics, cookies, contact forms, or build dependencies. GitHub may process hosting request information under its privacy policy.
 

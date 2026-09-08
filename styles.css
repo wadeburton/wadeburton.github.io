@@ -3,3 +3,19 @@
 @media(max-width:850px){.wrap{padding-inline:24px}.intro{gap:25px;padding-block:48px}.intro-copy{font-size:1rem}.feature{padding:32px;gap:25px}.feature-lead{font-size:1.4rem}.actions{gap:16px}.hero-shot{padding:24px 24px 16px}.capabilities{gap:24px}.editor-section{grid-template-columns:1fr;gap:20px;padding-block:40px}.editor-section h3 br{display:none}.editor-section>div{max-width:600px}.download{padding:32px;gap:28px}.section-heading{align-items:start;flex-direction:column;gap:15px}}
 @media(max-width:600px){.wrap{padding-inline:20px}.topbar{padding-block:20px}nav{gap:18px}.identity{font-size:.95rem}.monogram{display:none}.intro{grid-template-columns:1fr}.intro-copy{max-width:100%;margin-top:10px}h1{font-size:3.6rem}.project-heading{gap:10px;align-items:start;flex-direction:column}.feature{grid-template-columns:1fr;padding:28px 24px;gap:24px}.feature-lead br{display:none}.feature-lead{margin-top:12px}.hero-shot{padding:14px 12px}.hero-shot figcaption span{display:block}.capabilities{grid-template-columns:1fr;gap:28px;padding-block:35px}.capabilities h3{margin:9px 0}.evidence{grid-template-columns:1fr;gap:22px}.evidence p{padding-bottom:18px;border-bottom:1px solid var(--line)}.evidence p:last-child{padding-bottom:0;border:0}.engineering{padding-block:35px}.download{grid-template-columns:1fr;padding:28px 24px;margin-bottom:40px}.download .button{width:100%;gap:10px}footer{flex-direction:column;gap:25px}.diagram figcaption a{display:block;margin:8px 0 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Neutral portfolio shell. Product accents belong to each project, not the page. */
+:root{--ink:#25252b;--muted:#64646e;--paper:#fafafa;--line:#dedee3;--forest:#25252b;--mint:#e9e9ee}
+.monogram{background:#25252b;color:#fff}.intro{padding-bottom:54px}
+.project-index{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:52px}
+.project-index a{display:flex;align-items:center;gap:12px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:20px;text-decoration:none;font-size:.95rem}
+.project-index a>span:last-child{margin-left:auto}.project-index a:hover{border-color:#92929c}
+.project-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}.project-dot.green{background:#3f8663}.project-dot.blue{background:#5964d9}
+.metaclean{--forest:#102c26;--mint:#b5f2d1}.organizer{--forest:#202740;--mint:#d4daff}
+.organizer .status:before{background:#5964d9}.organizer .feature-lead{color:#d1d7f5}.organizer .feature-copy>p{color:#d8def1}
+.organizer .tags li{border-color:#535c82;color:#e0e4f9}.organizer .hero-shot{background:#e9ecf8;border-color:#d5dbef}
+.organizer .primary:hover{background:#e6e9ff}.organizer .download .eyebrow{color:#d4daff}
+.organizer .download-info p,.organizer .download-info li{color:#d0d6eb}.organizer .download details{border-color:#59617d}
+.organizer summary::marker{color:#5964d9}.project:target>.project-heading{padding-top:30px}
+a:focus-visible,summary:focus-visible{outline-color:#777785}
+@media(max-width:600px){.project-index{grid-template-columns:1fr;margin-bottom:30px}.intro{padding-bottom:30px}}
