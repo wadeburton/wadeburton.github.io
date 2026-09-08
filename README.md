@@ -1,0 +1,17 @@
+# Wade Burton | Projects
+
+A static project portfolio for GitHub Pages, featuring MetaClean Desktop.
+
+The website is plain HTML and CSS, with local screenshots and accessible SVG diagrams. It has no third-party scripts, analytics, cookies, contact forms, or build dependencies. GitHub may process hosting request information under its privacy policy.
+
+## Maintain the portfolio
+
+- Edit `index.html` for project descriptions and links.
+- Edit `styles.css` for appearance and responsive layout.
+- Store reviewed, non-sensitive screenshots and diagrams in `assets/`.
+- Publish app binaries as GitHub Release assets, not in Git history.
+- Add future projects as separate articles with unique headings and anchors.
+
+GitHub Pages publishes the `main` branch root. `.nojekyll` keeps it a plain static site.
+
+MetaClean's application repository is private. The publicly downloadable executable can still be inspected or reverse engineered; repository privacy is not binary confidentiality. Its preview limitations are described on the page and in release notes. No license for the application's own source is granted here. Retain the app's third-party notices when redistributing its complete package.
