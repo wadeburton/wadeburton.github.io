@@ -31,10 +31,15 @@ a:focus-visible,summary:focus-visible{outline-color:#777785}
 .trading .feature-copy>p{color:#e5dccd}
 .trading .tags li{border-color:#7b6a4f;color:#efe2cc}
 .trading-architecture{padding-top:42px}
-.architecture-layers{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.architecture-layers li{padding:26px;background:#fff;border:1px solid var(--line);border-top:3px solid #b68b48;border-radius:8px}
-.architecture-layers h4{font-size:1.2rem;margin:16px 0 12px;letter-spacing:-.025em}
-.architecture-layers p{color:var(--muted);margin:0;font-size:.95rem}
+.architecture-graph{margin:0;padding:20px 0 0}
+.architecture-graph svg{display:block;width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:10px}
+.graph-line{fill:none;stroke:#9c6b23;stroke-width:3}
+.graph-node rect{fill:#fff;stroke:#b68b48;stroke-width:2}
+.graph-label{fill:#64646e;font-size:12px;letter-spacing:1.5px;font-weight:600}
+.graph-heading{fill:#25252b;font-size:22px;font-weight:600;letter-spacing:-.5px}
+.graph-copy{fill:#64646e;font-size:15px}
+.architecture-graph figcaption{margin-top:14px}
 .coming-note{margin:24px 0 0;color:var(--muted);font-size:.9rem}
 .coming-note strong{color:var(--ink)}
-@media(max-width:850px){.project-index{grid-template-columns:1fr}.architecture-layers{grid-template-columns:1fr}}
+@media(max-width:850px){.project-index{grid-template-columns:1fr}.graph-heading{font-size:18px}.graph-copy{font-size:13px}}
+@media(max-width:600px){.architecture-graph{overflow:hidden}.architecture-graph svg{min-width:700px}.architecture-graph{overflow-x:auto;padding-bottom:4px}}
