@@ -1,8 +1,8 @@
 # Wade Burton | Projects
 
-A static project portfolio for GitHub Pages, featuring MetaClean Desktop, File Organizer Desktop, and a Coming Soon preview of Trading Desktop. The site shell uses neutral charcoal, white, and gray; each project has its own scoped accent colors.
+A static project portfolio for GitHub Pages, featuring MetaClean Desktop, File Organizer Desktop, and a Coming Soon preview of Sovereign Trade Desktop. The site shell uses neutral charcoal, white, and gray; each project has its own scoped accent colors.
 
-The Trading Desktop entry is a conceptual public teaser. Keep strategy definitions, private repository links, internal contracts, credentials, account information, and unpublished evaluation details out of this site. Its features are planned, and no download or release date is promised.
+The Sovereign Trade Desktop entry is a conceptual public teaser. Keep strategy definitions, private repository links, internal contracts, credentials, account information, and unpublished evaluation details out of this site. Its features are planned, and no download or release date is promised.
 
 The website is plain HTML and CSS, with local screenshots and accessible SVG diagrams. It has no third-party scripts, analytics, cookies, contact forms, or build dependencies. GitHub may process hosting request information under its privacy policy.
 
