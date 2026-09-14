@@ -23,27 +23,27 @@
     </section>
     <nav id="projects" class="project-index wrap" aria-label="Choose a project"><a href="#metaclean"><span class="project-dot green" aria-hidden="true"></span><span>01 / MetaClean</span><span aria-hidden="true">↓</span></a><a href="#file-organizer"><span class="project-dot blue" aria-hidden="true"></span><span>02 / File Organizer</span><span aria-hidden="true">↓</span></a><a href="#sovereign-trade"><span class="project-dot amber" aria-hidden="true"></span><span>03 / Sovereign Trade <small>Coming soon</small></span><span aria-hidden="true">↓</span></a></nav>
     <article id="metaclean" class="project metaclean wrap" aria-labelledby="project-title">
-      <div class="project-heading"><span class="eyebrow">01 / FEATURED PROJECT</span><span class="status">Windows desktop · Preview</span></div>
+      <div class="project-heading"><span class="eyebrow">01 / DOCUMENT DEFENSE &amp; SANITIZATION</span><span class="status">Windows desktop · Preview</span></div>
       <div class="feature">
         <div>
           <h2 id="project-title">MetaClean<span class="dot">.</span></h2>
-          <p class="feature-lead">A fresh start for<br>your documents.</p>
+          <p class="feature-lead">Sanitize untrusted files<br>before your AI reads them.</p>
         </div>
         <div class="feature-copy">
-          <p>Inspect document metadata, create cleaned copies, and make writing clearer in one native desktop workspace. Everyday cleanup stays on your computer.</p>
+          <p>You never know what's buried in a downloaded PDF or Office document. Untrusted files can harbor hidden metadata, tracking properties, and invisible zero-width characters used for indirect prompt injections. MetaClean inspects document properties, strips invisible characters, and creates clean, sanitized copies before you pass them to your agents or language models.</p>
           <div class="actions"><a class="button primary" href="#download">Get the Windows preview <span aria-hidden="true">↓</span></a><a class="text-link" href="#engineering">Explore the build <span aria-hidden="true">↘</span></a></div>
-          <ul class="tags" aria-label="Core technologies"><li>Python</li><li>PySide6 / Qt</li><li>PDF &amp; Office</li></ul>
+          <ul class="tags" aria-label="Core technologies"><li>Prompt Injection Defense</li><li>Zero-Width Stripping</li><li>Document Sanitization</li><li>PySide6 / Qt</li></ul>
         </div>
       </div>
-      <figure class="hero-shot"><a href="assets/desktop.png" aria-label="Open full-size MetaClean desktop screenshot"><img src="assets/desktop.png" alt="MetaClean desktop showing its file queue, metadata inspection panel, and clean-copy controls." width="1280" height="850" fetchpriority="high"></a><figcaption><span>THE WORKSPACE</span> Inspect first. Create a new copy. Keep the original.</figcaption></figure>
+      <figure class="hero-shot"><a href="assets/desktop.png" aria-label="Open full-size MetaClean desktop screenshot"><img src="assets/desktop.png" alt="MetaClean desktop showing its file queue, metadata inspection panel, and clean-copy controls." width="1280" height="850" fetchpriority="high"></a><figcaption><span>THE WORKSPACE</span> Inspect first. Create a sanitized copy. Keep the original intact.</figcaption></figure>
       <div class="capabilities">
-        <section><span class="number">01</span><h3>Clean copies</h3><p>Remove supported PDF and Office properties and stray invisible characters. Desktop exports use new filenames instead of overwriting existing files.</p></section>
-        <section><span class="number">02</span><h3>Reviewable editing</h3><p>Polish wording offline or use an optional local Ollama model. Review changes before copying or exporting the result.</p></section>
-        <section><span class="number">03</span><h3>Local by default</h3><p>No app account, telemetry, or automatic document upload. The optional model engine connects to your local Ollama service.</p></section>
+        <section><span class="number">01</span><h3>Prompt &amp; metadata defense</h3><p>Remove PDF and Office properties, document comments, and stray invisible characters that can poison agent context or trigger indirect prompt injections.</p></section>
+        <section><span class="number">02</span><h3>Reviewable editing</h3><p>Polish wording offline or verify extracted text with an optional local Ollama model. Review changes before feeding drafts downstream.</p></section>
+        <section><span class="number">03</span><h3>100% Local by default</h3><p>No cloud uploads, telemetry, or third-party document processing. Inspection and sanitization happen entirely on your computer.</p></section>
       </div>
       <section class="editor-section" aria-labelledby="editor-title">
-        <div><p class="eyebrow">THE WRITING WORKFLOW</p><h3 id="editor-title">You keep<br>the final word.</h3><p>The Humanize editor makes proposed changes visible. Supported Word exports retain paragraph structure and formatting of unchanged text.</p><p class="small">An editing tool, not proof of human authorship or a guarantee of AI-detector results.</p></div>
-        <figure><a href="assets/humanize.png" aria-label="Open full-size writing editor screenshot"><img src="assets/humanize.png" alt="MetaClean Humanize editor with original writing and a reviewable revised draft." width="1280" height="850" loading="lazy"></a><figcaption>Offline polish with a before-and-after review.</figcaption></figure>
+        <div><p class="eyebrow">THE REVIEW WORKFLOW</p><h3 id="editor-title">You keep<br>the final word.</h3><p>The Humanize editor makes proposed changes and revisions visible before you use them. Supported Word exports retain paragraph structure and formatting of unchanged text.</p><p class="small">An offline verification and editing tool, not proof of human authorship or a guarantee of AI-detector results.</p></div>
+        <figure><a href="assets/humanize.png" aria-label="Open full-size writing editor screenshot"><img src="assets/humanize.png" alt="MetaClean Humanize editor with original writing and a reviewable revised draft." width="1280" height="850" loading="lazy"></a><figcaption>Offline polish and inspection with a before-and-after review.</figcaption></figure>
       </section>
       <section id="engineering" class="engineering" aria-labelledby="engineering-title">
         <div class="section-heading"><div><p class="eyebrow">UNDER THE HOOD</p><h3 id="engineering-title">How it fits together.</h3></div><p>Native UI, shared document operations,<br>and a separate writing layer.</p></div>
