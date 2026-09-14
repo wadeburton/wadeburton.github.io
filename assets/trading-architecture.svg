@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="660" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+<title id="title">Sovereign Trade concept map</title><desc id="desc">Six branches around a central Sovereign Trade hub: Evidence and Ingestion, Local Agent Engine, Disciplined Admission, Operator Control, Local-first and Private, and Status and Roadmap. Status and Roadmap notes it is currently in paper testing, with real brokerage trades coming soon, and no profitability promised.</desc>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#3a2c12;font-size:16px}.heading{font-size:22px;font-weight:600;fill:#25252b}.name{font-size:19px;font-weight:600}.small{font-size:13px;fill:#7a6a4c}.branch{fill:#fdf6ea;stroke:#d9b878;stroke-width:1.3}.line{fill:none;stroke:#c9a464;stroke-width:2}</style>
+<rect width="1100" height="660" fill="#fff" rx="12"/>
+<text x="40" y="45" class="heading">Sovereign Trade / concept map</text>
+<text x="40" y="70" class="small" style="fill:#5c5c66">What the idea aims to do, how control stays with you, and where today&#8217;s limits are</text>
+<g class="line">
+  <path d="M420 322C370 322 385 183 365 183"/>
+  <path d="M420 330H365"/>
+  <path d="M420 338C370 338 385 500 365 500"/>
+  <path d="M680 322C730 322 715 183 735 183"/>
+  <path d="M680 330H735"/>
+  <path d="M680 338C730 338 715 500 735 500"/>
+</g>
+<rect x="420" y="290" width="260" height="80" rx="40" fill="#30291e"/>
+<text x="550" y="339" text-anchor="middle" style="fill:#f2d397;font-size:21px;font-weight:600;letter-spacing:.02em">SOVEREIGN TRADE</text>
+<g>
+  <rect x="55" y="110" width="310" height="142" rx="10" class="branch"/>
+  <text x="78" y="142" class="name">Evidence &amp; Ingestion</text>
+  <text x="78" y="172">Market price, volume &amp; signals</text>
+  <text x="78" y="199">Private local evidence store</text>
+  <text x="78" y="226">No cloud data exposure</text>
+
+  <rect x="55" y="275" width="310" height="125" rx="10" class="branch"/>
+  <text x="78" y="307" class="name">Local Agent Engine</text>
+  <text x="78" y="337">Scanner &#8594; Quant &#8594; Risk roles</text>
+  <text x="78" y="364">Local multi-agent reasoning</text>
+  <text x="78" y="385" class="small">Deterministic paper ledger</text>
+
+  <rect x="55" y="425" width="310" height="142" rx="10" class="branch"/>
+  <text x="78" y="457" class="name">Disciplined Admission</text>
+  <text x="78" y="487">Strict drawdown &amp; risk limits</text>
+  <text x="78" y="514">Operator admission criteria</text>
+  <text x="78" y="541">Immutable local audit trail</text>
+
+  <rect x="735" y="110" width="310" height="142" rx="10" class="branch"/>
+  <text x="758" y="142" class="name">Operator Control</text>
+  <text x="758" y="172">You set every limit</text>
+  <text x="758" y="199">You approve activation</text>
+  <text x="758" y="226">You can stop it anytime</text>
+
+  <rect x="735" y="275" width="310" height="125" rx="10" class="branch"/>
+  <text x="758" y="307" class="name">Local-first &amp; Private</text>
+  <text x="758" y="337">Runs on your own hardware</text>
+  <text x="758" y="364">Your data &amp; capital stay yours</text>
+  <text x="758" y="385" class="small">No required cloud dependency</text>
+
+  <rect x="735" y="425" width="310" height="142" rx="10" class="branch"/>
+  <text x="758" y="457" class="name">Status &amp; Roadmap</text>
+  <text x="758" y="487">Currently in paper testing</text>
+  <text x="758" y="514">Real brokerage trades, coming soon</text>
+  <text x="758" y="541" class="small">No profitability is promised</text>
+</g>
+<text x="550" y="620" text-anchor="middle" class="small">Concept in active development. No public download, live trading, or performance claims yet.</text>
+</svg>
