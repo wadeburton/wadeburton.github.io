@@ -19,3 +19,22 @@
 .organizer summary::marker{color:#5964d9}.project:target>.project-heading{padding-top:30px}
 a:focus-visible,summary:focus-visible{outline-color:#777785}
 @media(max-width:600px){.project-index{grid-template-columns:1fr;margin-bottom:30px}.intro{padding-bottom:30px}}
+
+/* Public teaser: conceptual layers only, no private implementation details. */
+.project-index{grid-template-columns:repeat(3,minmax(0,1fr))}
+.project-index small{display:block;margin-top:5px;font-size:.75rem;color:var(--muted)}
+.project-dot.amber{background:#9c6b23}
+.trading{--forest:#30291e;--mint:#f2d397;margin-bottom:64px}
+.trading .status:before{background:#9c6b23}
+.trading .feature{border-radius:18px}
+.trading .feature-lead{color:#e6d6ba}
+.trading .feature-copy>p{color:#e5dccd}
+.trading .tags li{border-color:#7b6a4f;color:#efe2cc}
+.trading-architecture{padding-top:42px}
+.architecture-layers{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.architecture-layers li{padding:26px;background:#fff;border:1px solid var(--line);border-top:3px solid #b68b48;border-radius:8px}
+.architecture-layers h4{font-size:1.2rem;margin:16px 0 12px;letter-spacing:-.025em}
+.architecture-layers p{color:var(--muted);margin:0;font-size:.95rem}
+.coming-note{margin:24px 0 0;color:var(--muted);font-size:.9rem}
+.coming-note strong{color:var(--ink)}
+@media(max-width:850px){.project-index{grid-template-columns:1fr}.architecture-layers{grid-template-columns:1fr}}
