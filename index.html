@@ -1,48 +1,372 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Wade Burton builds local AI systems: agent orchestration, measured coding harnesses, evidence-bound market automation, and an AI video pipeline.">
-  <meta name="theme-color" content="#0b0b0d">
-  <title>Wade Burton — I build AI systems that have to work</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip" href="#main">Skip to work</a>
-  <header class="nav shell"><a class="mark" href="#main" aria-label="Wade Burton home">W/B</a><nav aria-label="Primary navigation"><a href="#work">the work</a><a href="#proof">proof</a><a href="https://github.com/wadeburton">github ↗</a></nav></header>
-  <main id="main">
-    <section class="hero shell">
-      <p class="kicker"><span class="pulse"></span> WADE BURTON</p>
-      <h1>Spring 2027 graduate.<br><em>AI user + problem solver.</em></h1>
-      <p>I use advanced AI to take on hard, messy problems—then build the checks, context, and workflows needed to make the result useful.</p>
-      <a class="down" href="#work">what I learned by building <span>↓</span></a>
-    </section>
-    <section id="work" class="work shell" aria-labelledby="work-title">
-      <div class="section-intro"><p class="label">SELECTED SYSTEMS / RANKED BY DEPTH</p><h2 id="work-title">The interesting problems.</h2></div>
-      <article class="project lime">
-        <div class="project-no">01</div><div class="project-main"><p class="project-type">LOCAL AI · ORCHESTRATION · RELIABILITY</p><h3>Local Agent<br>Orchestrator</h3><p class="thesis">How do you let AI change real software without pretending model output is trustworthy?</p><p>I built a local-first platform that turns bounded tasks into reviewable work. It coordinates specialized roles, supplies only approved context, isolates edits, runs deterministic checks, records evidence, and stops at explicit approval boundaries.</p><div class="discoveries"><h4>What I discovered</h4><p><strong>Context is an engineered layer.</strong> More context can make a model worse. A context engine should select fresh, role-appropriate evidence within a strict budget and record exactly what each generation saw.</p><p><strong>Semantic layers need different trust rules.</strong> Instructions, API definitions, retrieved evidence, model reasoning, tool calls, and approval are not interchangeable. Separating these layers makes failures visible and limits what a convincing answer can trigger.</p><p><strong>Orchestration is mostly state management.</strong> Useful multi-agent work depends less on adding agents and more on durable identity, bounded ownership, recovery, independent review, and explicit handoffs.</p></div><div class="wins" aria-label="Notable engineering decisions"><span>context engine</span><span>semantic layers</span><span>agent orchestration</span><span>managed worktrees</span><span>local GPU inference</span></div><p class="secret">Showing the control model—not private policies, prompts, or production wiring.</p></div>
-        <figure class="flow" aria-labelledby="flow-lao-caption"><div class="flow-row"><b>explicit task</b><i>01</i></div><div class="flow-line"></div><div class="flow-split"><b>planner</b><b>builder</b><b>reviewer</b></div><div class="flow-line"></div><div class="flow-row accent"><b>checks + evidence</b><i>02</i></div><div class="flow-line gated"></div><div class="flow-row"><b>human approval</b><i>GATE</i></div><figcaption id="flow-lao-caption">Simplified verified workflow. Models propose; deterministic systems decide what advances.</figcaption></figure>
-      </article>
-      <article class="project coral">
-        <div class="project-no">02</div><div class="project-main"><p class="project-type">GENERATIVE VIDEO · GPU PIPELINE · QUALITY CONTROL</p><h3>Video Engine</h3><p class="thesis">Can one local machine turn a sourced story into a watchable short—without giving up factual or visual control?</p><p>I built a resumable production pipeline for research, scripts, voice, recurring characters, generated scenes, captions, assembly, and machine-assisted QA. Every stage leaves an artifact. Every upload remains a human decision.</p><div class="discoveries"><h4>What I discovered</h4><p><strong>Consistency beats raw generation quality.</strong> Recurring character and location references, shot grammar, and still-first review make separate AI scenes feel like one story.</p><p><strong>Exact facts need a different medium.</strong> Generated visuals are strong at atmosphere, not exact words or numbers. Code-drawn graphics and sourced scripts carry precision; generative models carry motion and mood.</p><p><strong>Resumability is an efficiency booster.</strong> Saving every stage means one bad scene or chapter can be repaired without regenerating an entire video.</p></div><div class="channel-proof"><strong>10,580</strong><span>early views</span><strong>44.1</strong><span>watch hours</span></div><a class="project-link" href="https://www.youtube.com/@Technicallyt">watch Technically T ↗</a><p class="soon">Next: upgraded video quality + five distinct visual styles.</p></div>
-        <figure class="flow storyboard" aria-labelledby="flow-video-caption"><div class="filmstrip"><span>source</span><span>script</span><span>voice</span><span>scene</span><span>cut</span><span>QA</span></div><div class="video-frame"><div class="play">▶</div><p>true stories<br>behind the tech</p></div><div class="gate-stamp">NO AUTO-UPLOAD</div><figcaption id="flow-video-caption">Actual stage order, condensed. Research binds claims; visual and audio checks run before review.</figcaption></figure>
-      </article>
-      <article class="project blue">
-        <div class="project-no">03</div><div class="project-main"><p class="project-type">MULTI-MODEL CODING · ROUTING · OBSERVABILITY</p><h3>My Coding<br>Harness</h3><p class="thesis">Models fail differently. Why send every task to the same one—or discover failure after the work is over?</p><p>I made a measured router and live dashboard around local, free, and frontier models. Workers can run in parallel; real task results rank them; dead streams and rate limits trigger bounded failover; privacy rules constrain where sensitive code can go.</p><div class="discoveries"><h4>What I discovered</h4><p><strong>The best model is task-dependent.</strong> Small local models can handle bounded edits cheaply and privately. Hard reasoning deserves escalation. Real completed tasks are a better router than marketing benchmarks.</p><p><strong>Parallelism helps only when ownership is clear.</strong> Splitting independent research or implementation work saves time; overlapping edits and vague roles create coordination debt.</p><p><strong>Efficiency includes failed work.</strong> Context pressure, empty generations, retries, and rate limits must be visible. Bounded failover turns hidden costs into measurable system behavior.</p></div><div class="wins"><span>efficiency routing</span><span>parallel workers</span><span>dead-step recovery</span><span>context pressure</span><span>benchmark replay</span></div></div>
-        <figure class="flow network" aria-labelledby="flow-harness-caption"><div class="router">TASK ROUTER</div><div class="routes"><span>local<br><small>private</small></span><span>workers<br><small>parallel</small></span><span>frontier<br><small>escalate</small></span></div><div class="meter"><i style="width:72%"></i></div><div class="flow-row"><b>live evidence</b><i>rank / retry / stop</i></div><figcaption id="flow-harness-caption">Routing uses measured task outcomes. Failover is capped and cannot silently weaken a privacy boundary.</figcaption></figure>
-      </article>
-      <article class="project orange">
-        <div class="project-no">04</div><div class="project-main"><p class="project-type">MARKET RESEARCH · TEMPORAL DATA · RISK GATES</p><h3>Guarded Market<br>Automation</h3><p class="thesis">Financial automation is easy to demo and hard to make honest.</p><p>I built research and paper-trading paths where every claim must have been knowable at decision time. Risk can veto. Approvals bind to exact proposals. Fresh preflight runs before paper execution, and fills reconcile into a durable ledger.</p><div class="discoveries"><h4>What I discovered</h4><p><strong>Time is part of the data.</strong> A fact that existed historically was not necessarily available when a decision was made. Publication time, market sessions, and point-in-time universes prevent convincing hindsight.</p><p><strong>Negative results create value.</strong> Preserving failed strategies and realistic costs prevents the system from repeatedly rediscovering attractive mistakes.</p><p><strong>AI and authority must stay separate.</strong> A model can research and propose. Deterministic risk checks, exact approvals, fresh account state, and reconciliation control what happens next.</p></div><p class="secret">No profitability claims. No autonomous live-money authority. Refusing weak evidence is a feature.</p></div>
-        <figure class="flow" aria-labelledby="flow-market-caption"><div class="flow-row"><b>timestamped evidence</b><i>KNOWN THEN?</i></div><div class="flow-line"></div><div class="flow-split"><b>research</b><b>quant</b><b>risk veto</b></div><div class="flow-line gated"></div><div class="flow-row accent"><b>bound approval</b><i>EXACT</i></div><div class="flow-line"></div><div class="flow-row"><b>paper + ledger</b><i>RECONCILE</i></div><figcaption id="flow-market-caption">Research project and current paper path summarized together. Live-money execution remains outside scope.</figcaption></figure>
-      </article>
-    </section>
-    <section id="proof" class="proof shell" aria-labelledby="proof-title"><div><p class="label">WHAT I BRING</p><h2 id="proof-title">I don’t hide<br>the ugly parts.</h2></div><div class="proof-list"><p><span>01</span><strong>I turn fuzzy ideas into systems with visible state.</strong> Resumable stages, artifacts, logs, and failure modes—not one lucky demo.</p><p><span>02</span><strong>I use AI aggressively, then verify it conventionally.</strong> Models plan and create. Tests, policies, measurements, and people control release.</p><p><span>03</span><strong>I preserve negative results.</strong> A failed strategy, model, or video is evidence that improves the next decision.</p><p><span>04</span><strong>I build for the machine I own.</strong> Local inference, GPU scheduling, privacy boundaries, and cost-aware escalation are product constraints.</p></div></section>
-    <section class="about shell"><p class="scribble">still learning. always shipping.</p><div><p>Wade Burton</p><p>Information Systems · University of Cincinnati · 2027</p></div><a href="https://github.com/wadeburton">see the public trail ↗</a></section>
-  </main>
-  <footer class="shell"><span>built by me, not generated from a portfolio template</span><span>© 2026 Wade Burton</span></footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wade Burton builds local AI systems: agent orchestration, measured coding harnesses, evidence-bound market automation, and an AI video pipeline."
+    />
+    <meta name="theme-color" content="#0b0b0d" />
+    <title>Wade Burton — I build AI systems that have to work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to work</a>
+    <header class="nav shell">
+      <a class="mark" href="#main" aria-label="Wade Burton home">W/B</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">the work</a><a href="#proof">proof</a
+        ><a href="https://github.com/wadeburton">github ↗</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero shell">
+        <h1>Wade Burton</h1>
+        <p class="role"><span class="pulse"></span>Spring 2027 graduate · AI user + problem solver.</p>
+        <p class="hero-summary">
+          I use advanced AI to take on hard, messy problems—then build the
+          checks, context, and workflows needed to make the result useful.
+        </p>
+      </section>
+      <section id="work" class="work shell" aria-labelledby="work-title">
+        <div class="section-intro">
+          <p class="label">SELECTED SYSTEMS / RANKED BY DEPTH</p>
+          <h2 id="work-title">The interesting problems.</h2>
+        </div>
+        <article class="project lime">
+          <div class="project-no">01</div>
+          <div class="project-main">
+            <p class="project-type">LOCAL AI · ORCHESTRATION · RELIABILITY</p>
+            <h3>Local Agent<br />Orchestrator</h3>
+            <p class="thesis">
+              How do you let AI change real software without pretending model
+              output is trustworthy?
+            </p>
+            <p>
+              I built a local-first platform that turns bounded tasks into
+              reviewable work. It coordinates specialized roles, supplies only
+              approved context, isolates edits, runs deterministic checks,
+              records evidence, and stops at explicit approval boundaries.
+            </p>
+            <div class="discoveries">
+              <h4>What I discovered</h4>
+              <p>
+                <strong>Context is an engineered layer.</strong> More context
+                can make a model worse. A context engine should select fresh,
+                role-appropriate evidence within a strict budget and record
+                exactly what each generation saw.
+              </p>
+              <p>
+                <strong>Semantic layers need different trust rules.</strong>
+                Instructions, API definitions, retrieved evidence, model
+                reasoning, tool calls, and approval are not interchangeable.
+                Separating these layers makes failures visible and limits what a
+                convincing answer can trigger.
+              </p>
+              <p>
+                <strong>Orchestration is mostly state management.</strong>
+                Useful multi-agent work depends less on adding agents and more
+                on durable identity, bounded ownership, recovery, independent
+                review, and explicit handoffs.
+              </p>
+            </div>
+            <div class="toolbox" aria-label="Tools and resources">
+              <span><i>Py</i>Python</span><span><i>OL</i>Ollama</span>
+              <span><i>SQL</i>SQLite</span><span><i>GH</i>GitHub</span>
+              <span><i>GPU</i>RTX 5080</span><span><i>✓</i>pytest</span>
+            </div>
+            <div class="wins" aria-label="Notable engineering decisions">
+              <span>context engine</span><span>semantic layers</span
+              ><span>agent orchestration</span><span>managed worktrees</span
+              ><span>local GPU inference</span>
+            </div>
+            <p class="secret">
+              Showing the control model—not private policies, prompts, or
+              production wiring.
+            </p>
+          </div>
+          <figure class="flow system-flow" aria-labelledby="flow-lao-caption">
+            <div class="resource-row"><span>repo</span><span>approved skills</span><span>API refs</span></div>
+            <div class="flow-line"></div>
+            <div class="flow-row accent"><b>context engine</b><i>SELECT + HASH</i></div>
+            <div class="flow-line"></div>
+            <div class="flow-split">
+              <b>planner</b><b>builder</b><b>reviewer</b>
+            </div>
+            <div class="flow-line"></div>
+            <div class="flow-row"><b>isolated worktree</b><i>BOUNDED EDIT</i></div>
+            <div class="flow-line"></div>
+            <div class="flow-row accent"><b>tests + evidence journal</b><i>VERIFY</i></div>
+            <div class="flow-line gated"></div>
+            <div class="flow-row"><b>human approval</b><i>GATE</i></div>
+            <figcaption id="flow-lao-caption">
+              Simplified verified workflow. Models propose; deterministic
+              systems decide what advances.
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project coral">
+          <div class="project-no">02</div>
+          <div class="project-main">
+            <p class="project-type">
+              GENERATIVE VIDEO · GPU PIPELINE · QUALITY CONTROL
+            </p>
+            <h3>Video Engine</h3>
+            <p class="thesis">
+              Can one local machine turn a sourced story into a watchable
+              short—without giving up factual or visual control?
+            </p>
+            <p>
+              I built a resumable production pipeline for research, scripts,
+              voice, recurring characters, generated scenes, captions, assembly,
+              and machine-assisted QA. Every stage leaves an artifact. Every
+              upload remains a human decision.
+            </p>
+            <div class="discoveries">
+              <h4>What I discovered</h4>
+              <p>
+                <strong>Consistency beats raw generation quality.</strong>
+                Recurring character and location references, shot grammar, and
+                still-first review make separate AI scenes feel like one story.
+              </p>
+              <p>
+                <strong>Exact facts need a different medium.</strong> Generated
+                visuals are strong at atmosphere, not exact words or numbers.
+                Code-drawn graphics and sourced scripts carry precision;
+                generative models carry motion and mood.
+              </p>
+              <p>
+                <strong>Resumability is an efficiency booster.</strong> Saving
+                every stage means one bad scene or chapter can be repaired
+                without regenerating an entire video.
+              </p>
+            </div>
+            <div class="toolbox" aria-label="Tools and resources">
+              <span><i>Py</i>Python</span><span><i>UI</i>ComfyUI</span>
+              <span><i>LTX</i>LTX Video</span><span><i>FLX</i>FLUX</span>
+              <span><i>FF</i>FFmpeg</span><span><i>Wh</i>Whisper</span>
+            </div>
+            <div class="channel-proof">
+              <strong>10,580</strong><span>early views</span
+              ><strong>44.1</strong><span>watch hours</span>
+            </div>
+            <a class="project-link" href="https://www.youtube.com/@Technicallyt"
+              >watch Technically T ↗</a
+            >
+            <p class="soon">
+              Next: upgraded video quality + five distinct visual styles.
+            </p>
+          </div>
+          <figure class="flow storyboard" aria-labelledby="flow-video-caption">
+            <div class="resource-row"><span>sources</span><span>cast refs</span><span>style profile</span></div>
+            <div class="flow-line"></div>
+            <div class="filmstrip">
+              <span>claims</span><span>script</span><span>voice</span
+              ><span>keyframes</span><span>motion</span><span>assembly</span>
+            </div>
+            <div class="video-frame">
+              <div class="play">▶</div>
+              <p>true stories<br />behind the tech</p>
+            </div>
+            <div class="gate-stamp">NO AUTO-UPLOAD</div>
+            <div class="check-row"><span>visual QC</span><span>audio/WER</span><span>human review</span></div>
+            <figcaption id="flow-video-caption">
+              Actual stage order, condensed. Research binds claims; visual and
+              audio checks run before review.
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project blue">
+          <div class="project-no">03</div>
+          <div class="project-main">
+            <p class="project-type">
+              MULTI-MODEL CODING · ROUTING · OBSERVABILITY
+            </p>
+            <h3>My Coding<br />Harness</h3>
+            <p class="thesis">
+              Models fail differently. Why send every task to the same one—or
+              discover failure after the work is over?
+            </p>
+            <p>
+              I made a measured router and live dashboard around local, free,
+              and frontier models. Workers can run in parallel; real task
+              results rank them; dead streams and rate limits trigger bounded
+              failover; privacy rules constrain where sensitive code can go.
+            </p>
+            <div class="discoveries">
+              <h4>What I discovered</h4>
+              <p>
+                <strong>The best model is task-dependent.</strong> Small local
+                models can handle bounded edits cheaply and privately. Hard
+                reasoning deserves escalation. Real completed tasks are a better
+                router than marketing benchmarks.
+              </p>
+              <p>
+                <strong>Parallelism helps only when ownership is clear.</strong>
+                Splitting independent research or implementation work saves
+                time; overlapping edits and vague roles create coordination
+                debt.
+              </p>
+              <p>
+                <strong>Efficiency includes failed work.</strong> Context
+                pressure, empty generations, retries, and rate limits must be
+                visible. Bounded failover turns hidden costs into measurable
+                system behavior.
+              </p>
+            </div>
+            <div class="toolbox" aria-label="Tools and resources">
+              <span><i>OC</i>OpenCode</span><span><i>TS</i>TypeScript</span>
+              <span><i>Py</i>Python</span><span><i>OL</i>Ollama</span>
+              <span><i>CC</i>Claude CLI</span><span><i>TX</i>Textual</span>
+            </div>
+            <div class="wins">
+              <span>efficiency routing</span><span>parallel workers</span
+              ><span>dead-step recovery</span><span>context pressure</span
+              ><span>benchmark replay</span>
+            </div>
+          </div>
+          <figure class="flow network" aria-labelledby="flow-harness-caption">
+            <div class="resource-row"><span>task</span><span>privacy class</span><span>bench results</span></div>
+            <div class="flow-line"></div>
+            <div class="router">TASK ROUTER</div>
+            <div class="routes">
+              <span>local<br /><small>private</small></span
+              ><span>workers<br /><small>parallel</small></span
+              ><span>frontier<br /><small>escalate</small></span>
+            </div>
+            <div class="meter"><i style="width: 72%"></i></div>
+            <div class="flow-row">
+              <b>live evidence</b><i>rank / retry / stop</i>
+            </div>
+            <div class="check-row"><span>tool calls</span><span>tokens</span><span>context %</span></div>
+            <figcaption id="flow-harness-caption">
+              Routing uses measured task outcomes. Failover is capped and cannot
+              silently weaken a privacy boundary.
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project orange">
+          <div class="project-no">04</div>
+          <div class="project-main">
+            <p class="project-type">
+              MARKET RESEARCH · TEMPORAL DATA · RISK GATES
+            </p>
+            <h3>Guarded Market<br />Automation</h3>
+            <p class="thesis">
+              Financial automation is easy to demo and hard to make honest.
+            </p>
+            <p>
+              I built research and paper-trading paths where every claim must
+              have been knowable at decision time. Risk can veto. Approvals bind
+              to exact proposals. Fresh preflight runs before paper execution,
+              and fills reconcile into a durable ledger.
+            </p>
+            <div class="discoveries">
+              <h4>What I discovered</h4>
+              <p>
+                <strong>Time is part of the data.</strong> A fact that existed
+                historically was not necessarily available when a decision was
+                made. Publication time, market sessions, and point-in-time
+                universes prevent convincing hindsight.
+              </p>
+              <p>
+                <strong>Negative results create value.</strong> Preserving
+                failed strategies and realistic costs prevents the system from
+                repeatedly rediscovering attractive mistakes.
+              </p>
+              <p>
+                <strong>AI and authority must stay separate.</strong> A model
+                can research and propose. Deterministic risk checks, exact
+                approvals, fresh account state, and reconciliation control what
+                happens next.
+              </p>
+            </div>
+            <div class="toolbox" aria-label="Tools and resources">
+              <span><i>Py</i>Python</span><span><i>SEC</i>SEC data</span>
+              <span><i>AP</i>Alpaca Paper</span><span><i>SQL</i>SQLite</span>
+              <span><i>NY</i>NYSE calendar</span><span><i>✓</i>pytest</span>
+            </div>
+            <p class="secret">
+              No profitability claims. No autonomous live-money authority.
+              Refusing weak evidence is a feature.
+            </p>
+          </div>
+          <figure class="flow" aria-labelledby="flow-market-caption">
+            <div class="resource-row"><span>SEC filings</span><span>market bars</span><span>account state</span></div>
+            <div class="flow-line"></div>
+            <div class="flow-row">
+              <b>timestamped evidence</b><i>KNOWN THEN?</i>
+            </div>
+            <div class="flow-line"></div>
+            <div class="flow-split">
+              <b>research</b><b>quant</b><b>risk veto</b>
+            </div>
+            <div class="flow-line gated"></div>
+            <div class="flow-row accent"><b>bound approval</b><i>EXACT</i></div>
+            <div class="flow-line"></div>
+            <div class="flow-row"><b>fresh preflight</b><i>PRICE + CASH + SESSION</i></div>
+            <div class="flow-line"></div>
+            <div class="flow-row"><b>paper broker + ledger</b><i>RECONCILE</i></div>
+            <figcaption id="flow-market-caption">
+              Research project and current paper path summarized together.
+              Live-money execution remains outside scope.
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      <section id="proof" class="proof shell" aria-labelledby="proof-title">
+        <div>
+          <p class="label">WHAT I BRING</p>
+          <h2 id="proof-title">I don’t hide<br />the ugly parts.</h2>
+        </div>
+        <div class="proof-list">
+          <p>
+            <span>01</span
+            ><strong
+              >I turn fuzzy ideas into systems with visible state.</strong
+            >
+            Resumable stages, artifacts, logs, and failure modes—not one lucky
+            demo.
+          </p>
+          <p>
+            <span>02</span
+            ><strong
+              >I use AI aggressively, then verify it conventionally.</strong
+            >
+            Models plan and create. Tests, policies, measurements, and people
+            control release.
+          </p>
+          <p>
+            <span>03</span><strong>I preserve negative results.</strong> A
+            failed strategy, model, or video is evidence that improves the next
+            decision.
+          </p>
+          <p>
+            <span>04</span><strong>I build for the machine I own.</strong> Local
+            inference, GPU scheduling, privacy boundaries, and cost-aware
+            escalation are product constraints.
+          </p>
+        </div>
+      </section>
+      <section class="about shell">
+        <p class="scribble">still learning. always shipping.</p>
+        <div>
+          <p>Wade Burton</p>
+          <p>Information Systems · University of Cincinnati · 2027</p>
+        </div>
+        <a href="https://github.com/wadeburton">see the public trail ↗</a>
+      </section>
+    </main>
+    <footer class="shell">
+      <span>built by me, not generated from a portfolio template</span
+      ><span>© 2026 Wade Burton</span>
+    </footer>
+  </body>
 </html>
