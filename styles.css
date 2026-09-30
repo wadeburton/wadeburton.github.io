@@ -65,6 +65,39 @@
   font: 800 0.52rem Manrope, sans-serif;
   font-style: normal;
 }
+.demo-card {
+  margin: 2.25rem 0;
+  padding: 1rem;
+  border: 1px solid #3a3a42;
+  background: #101014;
+  box-shadow: 8px 8px 0 #000;
+}
+.demo-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid #33333a;
+}
+.demo-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  font: 500 0.7rem DM Mono, monospace;
+}
+.demo-heading span {
+  color: var(--accent);
+}
+.demo-heading strong {
+  color: var(--ink);
+  text-align: right;
+}
+.demo-card > p {
+  margin: 0.85rem 0 0;
+  color: #918d86;
+  font: 400 0.68rem/1.6 DM Mono, monospace;
+}
 .resource-row,
 .check-row {
   display: grid;
