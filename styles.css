@@ -72,6 +72,39 @@
   background: #101014;
   box-shadow: 8px 8px 0 #000;
 }
+.demo-showcase {
+  margin: 0 0 6rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  background: #0e0e12;
+}
+.demo-showcase-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.demo-showcase-heading p {
+  margin: 0;
+}
+.demo-showcase-heading h3 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  letter-spacing: -0.045em;
+}
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.demo-showcase .demo-card {
+  --accent: var(--lime);
+  margin: 0;
+}
+.demo-showcase .orange-card {
+  --accent: var(--orange);
+}
 .demo-card video {
   display: block;
   width: 100%;
@@ -608,6 +641,9 @@ footer {
   }
   .section-intro,
   .proof {
+    grid-template-columns: 1fr;
+  }
+  .demo-grid {
     grid-template-columns: 1fr;
   }
   .project {
