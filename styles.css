@@ -292,8 +292,7 @@ nav a:hover {
   align-items: end;
   margin-bottom: 3rem;
 }
-.section-intro h2,
-.proof h2 {
+.section-intro h2 {
   font-size: clamp(2.5rem, 5vw, 5rem);
   line-height: 0.95;
   letter-spacing: -0.06em;
@@ -549,39 +548,6 @@ nav a:hover {
   height: 100%;
   background: var(--blue);
 }
-.proof {
-  padding: 8rem 0;
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 6rem;
-  border-top: 1px solid var(--line);
-}
-.proof-list p {
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  gap: 0.8rem 1.2rem;
-  border-top: 1px solid var(--line);
-  margin: 0;
-  padding: 1.8rem 0;
-  color: var(--muted);
-  line-height: 1.6;
-}
-.proof-list span {
-  font:
-    500 0.7rem DM Mono,
-    monospace;
-  color: var(--lime);
-  grid-column: 1;
-  grid-row: 1;
-}
-.proof-list strong {
-  color: var(--ink);
-  font-size: 1.1rem;
-}
-.proof-list strong,
-.proof-list p {
-  grid-column: 2;
-}
 .about {
   min-height: 60vh;
   display: flex;
@@ -639,8 +605,7 @@ footer {
   .hero .hero-summary {
     grid-column: 1;
   }
-  .section-intro,
-  .proof {
+  .section-intro {
     grid-template-columns: 1fr;
   }
   .demo-grid {
@@ -656,9 +621,6 @@ footer {
   }
   .flow {
     margin-top: 2rem;
-  }
-  .proof {
-    gap: 3rem;
   }
   .scribble {
     position: static;
