@@ -234,6 +234,16 @@ nav a {
 nav a:hover {
   color: var(--lime);
 }
+.nav .contact-link {
+  padding: 0.55rem 0.75rem;
+  background: var(--lime);
+  color: #0b0b0d;
+  font-weight: 500;
+}
+.nav .contact-link:hover {
+  background: var(--ink);
+  color: #0b0b0d;
+}
 .hero {
   padding: 3.25rem 0;
   border-bottom: 1px solid var(--line);
