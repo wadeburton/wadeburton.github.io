@@ -65,6 +65,14 @@
   font: 800 0.52rem Manrope, sans-serif;
   font-style: normal;
 }
+.toolbox .tool-logo {
+  flex: 0 0 auto;
+  width: 1.7rem;
+  height: 1.7rem;
+  padding: 0.3rem;
+  border-radius: 0.35rem;
+  background: #24242a;
+}
 .demo-card {
   margin: 2.25rem 0;
   padding: 1rem;
