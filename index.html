@@ -48,11 +48,12 @@
           </div>
           <div class="demo-grid">
             <div class="demo-card lime-card">
-              <div class="demo-heading"><span>DEMO 01</span><strong>Operator commands + skill discovery</strong></div>
+              <div class="demo-heading"><span>DEMO 01</span><strong>Discord commands into local systems</strong></div>
               <video controls muted playsinline preload="metadata" poster="assets/demos/skill-discovery-poster.jpg?v=full-commands">
                 <source src="assets/demos/skill-discovery-demo.mp4?v=full-commands" type="video/mp4" />
               </video>
-              <p>Full command walkthrough: health check, model-agnostic skill search, market summary, and news interface. Paper balances and operational history are blurred. Approval, loading, and permissions remain outside the model.</p>
+              <p class="demo-process"><strong>PROCESS</strong> Discord slash command → read-only local bot → structured query → private reply</p>
+              <p>Discord is the interface, not the system. <code>/check</code> and <code>/hot</code> read paper-trading status and market summaries; <code>/search</code>, <code>/skill</code>, and <code>/trending</code> query the model-agnostic skill registry; <code>/ainews</code> reads a separate hourly news feed summarized by a local model. The bots cannot execute trades or approve skills.</p>
             </div>
             <div class="demo-card orange-card">
               <div class="demo-heading"><span>DEMO 02</span><strong>Paper-system dashboard</strong></div>
